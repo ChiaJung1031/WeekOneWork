@@ -1,0 +1,100 @@
+<style>
+html, body {
+			width: 100%;
+			height: 100%;
+			margin: 0px;
+			padding: 0px;
+           }
+
+
+.new{width:100%; display:flex}
+nav{font-size:20px;}
+nav > .new>.logo{flex:auto;}
+nav > .new>.menu{flex:none;}
+
+
+.view{width:1200px; max-width: 100%; margin: 0px auto; text-align: center;}
+
+.new{display:flex; flex-wrap:wrap; justify-content:center;}
+
+
+.profile{display:flex; flex-wrap:wrap; justify-content:center; margin: 0px auto;}
+
+.profile >.pic {width:25%}
+.view>.profile >.pic > img{flex:none;text-align: center; background-color:#0000ff61;width:22%;margin:5px}
+
+
+.item {
+		 flex: 1;
+		 background-color: #9cb8c5ad;
+		 display: flex;
+		 justify-content: center;
+		 align-items: center;
+		 height: 300px;
+		 font-size:40px;
+	 }
+
+
+.hamber{display:none}
+
+@media (max-width:1200px)
+{
+ .profile > .pic{width:45%}
+    .profile{width:90%}
+}
+
+
+@media (max-width:600px)
+{
+ .profile > .pic {width:90%}
+ .profile{width:90%}   
+ .menu{display:none}
+ .hamber{display:block}
+}
+
+
+</style>
+
+<!DOCTYPE html>
+<html>
+<body>
+	<nav>
+		<div class="new">
+			<div class="logo">My Website</div>
+			<div class="menu">Item 1</div> &nbsp;
+			<div class="menu">Item 2</div> &nbsp;
+			<div class="menu">Item 3</div> &nbsp;
+			<div class="menu">Item 4</div> &nbsp;
+			<div class="hamber"><img src="https://i.imgur.com/55nOJMW.jpg" width="50"></div>
+		</div>
+	</nav>
+
+
+
+	<div class="item">Welcome to MyHome</div>
+
+		<div class="view">
+				<div class="profile">
+
+					  <div class="pic"><img src="https://i.imgur.com/aWUSAbA.png" ><br/>Title1</div>
+					  <div class="pic"><img src="https://i.imgur.com/aWUSAbA.png" ><br/>Title2</div>
+					  <div class="pic"><img src="https://i.imgur.com/aWUSAbA.png" ><br/>Title3</div>
+					  <div class="pic"><img src="https://i.imgur.com/aWUSAbA.png" ><br/>Title4</div>
+					  <div class="pic"><img src="https://i.imgur.com/aWUSAbA.png"><br/>Title5</div>
+					  <div class="pic"><img src="https://i.imgur.com/aWUSAbA.png" ><br/>Title6</div>
+					  <div class="pic"><img src="https://i.imgur.com/aWUSAbA.png" ><br/>Title7</div>
+					  <div class="pic"><img src="https://i.imgur.com/aWUSAbA.png" ><br/>Title8</div>
+				 
+				</div>
+		</div>
+
+	</div>
+
+
+</body>
+
+
+
+
+
+</html>
